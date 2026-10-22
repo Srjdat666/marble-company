@@ -8,7 +8,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  font-family:'Inter',sans-serif;
+
+    font-family: "Cairo", sans-serif;
   background:var(--bg);
   color:var(--ink);
   line-height:1.7;
@@ -64,7 +65,7 @@ h1,h2,h3{
 }
 .hero-overlay{
   position:absolute;inset:0;
-  background:linear-gradient(to left,rgba(0,0,0,.15),rgba(0,0,0,.6));
+  background:linear-gradient(to right,rgba(0,0,0,.15),rgba(0,0,0,.6));
 }
 .hero-content{
   position:relative;z-index:2;
@@ -221,4 +222,13 @@ wa-float:hover{transform:scale(1.1)}
       transition:background .25s ease;
     }
     .lightbox-close:hover{ background:rgba(255,255,255,.3); }
- 
+ .experience-badge{
+    background:#b5925a;
+    color:white;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:700;
+    display:inline-block;
+}
+  .about-img{position:relative}
+  .experience-badge{position:absolute;bottom:-18px;right:20px;box-shadow:0 8px 20px rgba(0,0,0,.15)}
