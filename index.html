@@ -51,6 +51,7 @@
       <a href="#about">من نحن</a>
       <a href="#services">الخدمات</a>
       <a href="#gallery">المعرض</a>
+      <a href="#estimator">جهّز طلبك</a>
     </nav>
     <a href="https://wa.me/218910109505?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%84%D8%B1%D8%AE%D8%A7%D9%85" class="btn btn-small" target="_blank" rel="noopener">واتساب</a>
   </header>
@@ -144,6 +145,31 @@
     </ol>
   </section>
 
+  <!-- ===== COVERAGE: التغطية ===== -->
+  <section id="coverage" class="coverage">
+    <div class="coverage-inner">
+      <div class="coverage-text">
+        <h2>من تاجوراء<br>إلى كل ليبيا</h2>
+        <p>
+          ورشتنا في تاجوراء، طرابلس. نقصّ ونجهّز القطع هناك، ثم نوصلها
+          ونركّبها في موقعك أينما كان داخل ليبيا.
+        </p>
+        <a href="#estimator" class="btn btn-outline">جهّز طلبك لمدينتك</a>
+      </div>
+      <ul class="cities" aria-label="أمثلة على المدن التي نخدمها">
+        <li>طرابلس</li>
+        <li>بنغازي</li>
+        <li>مصراتة</li>
+        <li>الزاوية</li>
+        <li>الخمس</li>
+        <li>سبها</li>
+        <li>طبرق</li>
+        <li>سرت</li>
+        <li class="cities-more">وكل مدينة أخرى</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ===== GALLERY ===== -->
   <section id="gallery" class="gallery">
     <div class="section-head">
@@ -158,6 +184,46 @@
       <button type="button" class="tile" aria-label="تكبير الصورة 5"><img src="marbleston.jpg" alt="عمل رخام من أعمال أساس، صورة 5" loading="lazy" decoding="async"></button>
       <button type="button" class="tile" aria-label="تكبير الصورة 6"><img src="marblework.jpg" alt="عمل رخام من أعمال أساس، صورة 6" loading="lazy" decoding="async"></button>
     </div>
+  </section>
+
+  <!-- ===== ESTIMATOR: جهّز طلبك ===== -->
+  <section id="estimator" class="estimator">
+    <div class="section-head">
+      <h2>جهّز طلبك في دقيقة</h2>
+      <p>اختر الخدمة وأدخل القياس التقريبي، ونجهّز لك رسالة كاملة تصلنا على واتساب.</p>
+    </div>
+    <form class="est-form" id="est-form" novalidate>
+      <div class="field">
+        <label for="est-type">نوع العمل</label>
+        <select id="est-type">
+          <option value="kitchen">رخام مطابخ</option>
+          <option value="stairs">درج وسلالم</option>
+          <option value="floors">أرضيات وصالات</option>
+          <option value="walls">جدران وواجهات</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="est-stone">نوع الحجر</label>
+        <select id="est-stone">
+          <option value="">لم أحدد بعد</option>
+          <option value="رخام أبيض كرارا">رخام أبيض كرارا</option>
+          <option value="ترافرتين">ترافرتين</option>
+          <option value="جرانيت أسود">جرانيت أسود</option>
+          <option value="رخام آخر">نوع آخر</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="est-qty" id="est-qty-label">الطول التقريبي (بالمتر الطولي)</label>
+        <input type="number" id="est-qty" inputmode="decimal" min="0" step="any" placeholder="مثال: 6" dir="ltr">
+        <p class="field-error" id="est-error" role="alert" hidden></p>
+      </div>
+      <div class="field">
+        <label for="est-city">المدينة</label>
+        <input type="text" id="est-city" autocomplete="address-level2" placeholder="مثال: طرابلس">
+      </div>
+      <button type="submit" class="btn est-submit">أرسل الطلب على واتساب</button>
+      <p class="est-note">الأسعار تُحدَّد بعد معاينة الصور والقياسات، والاستشارة مجانية.</p>
+    </form>
   </section>
 
   <!-- ===== CTA / WHATSAPP ===== -->
